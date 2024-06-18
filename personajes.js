@@ -1,3 +1,4 @@
+  
 fetch("https://hp-api.onrender.com/api/characters")
   .then((respuesta) => {
     return respuesta.json();
@@ -15,9 +16,9 @@ fetch("https://hp-api.onrender.com/api/characters")
       card.innerHTML = `
         <h4>${personaje.name}</h4>
         <img src="${personaje.image}" alt="imagen de ${personaje.name}">
-        <p>Gender: ${personaje.gender}</p>
-        <p>Species: ${personaje.species}</p>
-        <p>House: ${personaje.house}</p>
+        <p>Genero: ${personaje.gender}</p>
+        <p>Especie: ${personaje.species}</p>
+        <p>Actor/Actriz: ${personaje.actor}</p>
       `;
 
       grid.appendChild(card);
